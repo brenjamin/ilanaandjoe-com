@@ -1,0 +1,973 @@
+/* Meyer Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body, html {
+	height: 100%;
+	font-family: 'Crimson Text', serif;
+}
+	
+
+main {
+	height: 100%;
+	margin-top: 60px;
+}
+
+/* Navigation Bar */
+
+.navigation {
+  height: 80px;
+  line-height: 80px;
+  font-family: "Crimson Text", serif;
+  position: relative;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background: #fffff0;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#names-logo {
+  display: inline-block;
+  padding-right: 80px;
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+}
+
+a {
+	text-decoration: none;
+  	color: black;
+}
+
+li a:hover {
+	text-decoration: underline;
+}
+
+#list-items {
+  display: inline-block; 
+  font-size: 25px;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  font-variant: small-caps;
+}
+
+li:not(:last-child) {
+  padding-right: 50px;
+}
+
+/* Mobile Navigation Bar */
+
+/* Hamburger Container */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+}
+
+/* Hamburger */
+#nav-toggle {
+  position: absolute;
+        left: 13px;
+  top: 18px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+/* Hamburger Lines */
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 10px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+
+/* Middle Line of Hamburger */
+#nav-toggle span {
+	transition: all 150ms ease-in-out;
+}
+
+/* Top Line of Hamburger */
+#nav-toggle span:before {
+  top: -10px;
+}
+
+/* Bottom Line of Hamburger */
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+/* Transitions for Drop-Down Menu */
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+/* Background Images */
+
+#bg1 {
+	background: url(photos/background1.jpg) 0 60px/cover no-repeat fixed;
+	height: 100vh;
+	min-height: 500px;
+}
+
+/* Background 1 Content */
+
+#outer {
+	width: 360px;
+	height: 200px;
+	border: 6px solid white;
+	float: left;
+	margin-top: 200px;
+	margin-left: 75px;
+	box-shadow: 0px 0px 5px 1px white;
+	box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+#inner {
+	background: white;
+	height: 92.5%;
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 7.25px;
+	text-align: center;
+	
+	box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.smallcaps {
+	font-variant: small-caps;
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+#names {
+	padding-top: 25px;
+	font-size: 50px;
+	font-family: 'Great Vibes', cursive;
+}
+
+#bars {
+	padding: 10px 0;
+}
+
+.bar {
+	width: 42%;
+	border: 0.5px rgba(0, 0, 0, 0.4) solid;
+	display: inline-block;
+	margin: 5px;
+}
+
+.fa-heart {
+	color: #800020;
+}
+
+#date {
+	font-size: smaller;
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+	letter-spacing: 2px;
+}
+
+
+#bg2 {
+	background: url(photos/background2.jpg) center center/cover no-repeat fixed;
+	min-height: 500px;
+}
+
+#bg3 {
+	background: url(photos/background3.jpg) 0 60px/cover no-repeat fixed;
+	min-height: 500px;
+}
+
+#bg4 {
+	background: url(photos/background4.jpg) 0 80px/cover no-repeat fixed;
+	min-height: 500px;
+}
+
+/* Styles for Text Content Divs */
+
+.text {
+	box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4);
+	position: relative;
+	z-index: 0;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+/* Our Story */
+
+#joe-single, #ilana-single {
+	width: 150px;
+	height: auto;
+	border-radius: 50%;
+	margin-bottom: 0;
+}
+
+#joe-single {
+	margin-right: 100px;
+}
+
+#ilana-single {
+	margin-left: 100px;
+}
+
+#story-pics {
+	margin-bottom: -40px;
+}
+
+/* Heart & Animation */
+@keyframes beat {
+	25% {transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-webkit-transform: scale(1.2);};
+	50% {transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		-webkit-transform: scale(1.0);};
+	100% {transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-webkit-transform: scale(1.2);};
+}
+
+#heart2 {
+	font-size: 60px;
+	position: relative;
+	animation-name: beat;
+	animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    top: -120px;
+}
+
+#our-story-text{
+	width: 75%;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+/* Ceremony & Accommodations */
+
+/* Beer Icons & Animation */
+#beer-icons {
+	text-align: center;
+}
+
+.fa-beer {
+	color: #FFC200;
+	font-size: 60px;
+	padding: 5px;	
+
+}
+
+@keyframes tiltright {
+
+	25% {-moz-transform: scaleX(-1) rotate(-45deg);
+       -o-transform: scaleX(-1) rotate(-45deg);
+        -webkit-transform: scaleX(-1) rotate(-45deg);
+        transform: scaleX(-1) rotate(-45deg);};
+	
+	50% {-moz-transform: scaleX(-1) rotate(45deg);
+       -o-transform: scaleX(-1) rotate(45deg);
+        -webkit-transform: scaleX(-1) rotate(45deg);
+        transform: scaleX(-1) rotate(45deg);};
+
+	75% {-moz-transform: scaleX(-1) rotate(-45deg);
+       -o-transform: scaleX(-1) rotate(-45deg);
+        -webkit-transform: scaleX(-1) rotate(-45deg);
+        transform: scaleX(-1) rotate(-45deg);};
+
+	100% {-moz-transform: scaleX(-1) rotate(45deg);
+       -o-transform: scaleX(-1) rotate(45deg);
+        -webkit-transform: scaleX(-1) rotate(45deg);
+        transform: scaleX(-1) rotate(45deg);};
+
+
+	
+
+}
+
+@keyframes tiltleft {
+	25% {transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);};
+	50% {transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);};
+	75% {transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);};
+
+}
+
+#beer1 {
+	animation-name: tiltleft;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+    animation-timing-function: ease-out;  
+
+}
+
+#beer2 {
+	-moz-transform: scaleX(-1);
+       -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+	animation-name: tiltright;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#text2 {
+	padding: 20px 0;
+}
+
+#text2 h2 {
+	font-size: 25px;
+}
+
+#text2 p {
+	font-size: 18px;
+}
+
+#ceremony p {
+	font-size: 20px;
+}
+
+.fa-stack {
+	display: block;
+	margin: 0 auto;
+}
+
+
+#ceremony, #accommodations {
+	width: 48%;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	vertical-align: top;
+}
+
+#ceremony a, #accommodations a {
+	text-decoration: underline;
+}
+
+.fa-map-marker-alt {
+	font-size: 20px;
+}
+
+.fa:hover {
+	color: white;
+}
+
+
+
+/* RSVP */
+
+#rsvp {
+	padding-top: 30px;
+
+}
+
+#rsvp h1 {
+	margin-top: 20px;
+}
+
+
+
+
+input {
+	margin: 5px;
+	font-size: 20px;
+	margin-top: 10px;
+	font-family: 'Crimson Text', serif;
+}
+
+legend {
+	font-size: 30px;
+}
+
+form {
+	margin-top: 10px;
+}
+
+form p {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.italic {
+	font-style: italic;
+	font-size: 15px;
+}
+
+
+input[type=text], textarea {
+	font-family: 'Crimson Text', serif;
+	border-radius: 5px;
+	width: 60%;
+	border: solid #800020;
+	padding: 5px;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+	font-size: 20px;
+	outline: none;
+}
+
+input#number {
+	width: 200px;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type=radio] {
+	vertical-align: baseline;
+	margin-top: 50px;
+	font-size: 50px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+label {
+	display: inline-block;
+	cursor: pointer;
+}
+
+input[type=submit] {
+	font-family: 'Crimson Text', serif;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+	background-color: #800020;
+	color:white;
+	box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	transition: all .3s;
+
+}
+
+input[type=submit]:hover {
+	background-color: white;
+	color: #800020;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 6px rgba(0,0,0,.2);
+}
+
+#attending {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+
+.fa-envelope {
+	animation-name: wobble;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: 60px;
+}
+
+
+@keyframes wobble {
+	25% {transform: rotate(-20deg);}
+	75% {transform: rotate(20deg);}
+}
+
+.error {
+	color: red;
+	font-weight: bold;
+}
+
+.success {
+	color: #800020;
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+
+/* Footer */
+
+footer {
+	background: #9BA17B;
+	color: white;
+	box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4);
+	position: relative;
+	z-index: 2;
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
+
+	#bg1 {
+		background-image: url(photos/background1-medium.jpg);
+		background-size: cover;
+		background-position: 0 60px;
+		background-attachment: fixed;
+
+	}
+
+	#outer {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: 1%;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    width: 100%;
+  }
+  
+  #list-items {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-mobile {
+    display: block;
+
+  }
+  
+  #names-logo {
+    display: block;
+    padding-right: 0;
+  }
+
+  #top-link {
+  	position: relative;
+  	z-index: 1;
+  }
+  
+  li  {
+    display: block;
+    padding-right: 0px;
+    background:#fffff0;
+    position: relative;
+    z-index: 0;
+  }
+
+  li a {
+  	display: block;
+  }
+  
+  li:not(:last-child) {
+    padding-right: 0px;
+  }
+  
+  
+  ul {
+    position: absolute;
+    top: 60px;
+    background: white;
+  }
+
+  #outer {
+  	margin-top: 450px;
+  }
+
+  #ceremony, #accommodations {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+	#ceremony {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	}
+
+
+
+
+}
+
+/* Mobile in landscape */
+@media only screen and (max-device-width: 750px) and (orientation: landscape) {
+	#bg1 {
+		background-image: url(photos/background1-medium.jpg);
+		background-size: cover;
+		background-position: center top;
+		background-attachment: scroll;
+
+	}
+
+	#bg2 {
+		background: url(photos/background2.jpg) center center/cover no-repeat scroll;
+		background-image: url(photos/background2.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		min-height: 500px;
+	}
+
+	#bg3 {
+		background: url(photos/background3-small.jpg) center center/cover no-repeat scroll;
+		background-image: url(photos/background3.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		
+		min-height: 600px;
+	}
+
+	#bg4 {
+		background: url(photos/background4-small.jpg) center center/cover no-repeat scroll;
+		background-image: url(photos/background4.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		
+		min-height: 600px;
+	}
+
+
+
+
+	#outer {
+
+		width: 200px;
+		height:112px;
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: -100px;
+	}
+
+	#inner {
+	background: white;
+	height: 92.5%;
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 3.75px;
+	text-align: center;
+	
+	box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+	.smallcaps {
+		font-variant: small-caps;
+		font-family: 'Crimson Text', serif;
+		font-size: 12px;
+		letter-spacing: 2px;
+		font-weight: bold;
+	}
+
+	#names {
+		padding-top: 10px;
+		font-size: 30px;
+		font-family: 'Great Vibes', cursive;
+	}
+
+
+	.fa-heart {
+		color: #800020;
+		
+	}
+
+#bars {
+	margin-top: -10px;
+}
+.bar {
+	width: 35%;
+	border: 0.5px rgba(0, 0, 0, 0.4) solid;
+	display: inline-block;
+	margin: 5px;
+}
+
+	#date {
+		font-size: smaller;
+	    text-transform: uppercase;
+	    font-family: 'Crimson Text', serif;
+	    font-size: 9px;
+		letter-spacing: 2px;
+		font-weight: bold;
+		margin-top: -8px;
+
+	}
+
+}
+
+
+@media only screen and (max-width: 650px) {
+#bg1 {
+		background-image: url(photos/background1-small.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		position: relative;
+
+	}
+
+	#outer {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: 10%;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+
+	#joe-single, #ilana-single {
+	width: 125px;
+	height: auto;
+}
+	#joe-single {
+	margin-right: 50px;
+}
+
+#ilana-single {
+	margin-left: 50px;
+}
+
+#heart2 {
+	top: -100px;
+	font-size: 50px;
+	}
+
+
+}
+
+@media only screen and (max-width: 530px) {
+
+	#bg2 {
+		background: url(photos/background2-alt-small.jpg) center center/cover no-repeat scroll;
+		background-image: url(photos/background2-alt-small.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		min-height: 500px;
+	}
+
+	#bg3 {
+		background: url(photos/background3-small.jpg) center center/cover no-repeat scroll;
+		background-image: url(photos/background3-small.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		
+		min-height: 600px;
+	}
+
+	#bg4 {
+		background: url(photos/background4-small.jpg) center center/cover no-repeat scroll;
+		background-image: url(photos/background4-small.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		
+		min-height: 550px;
+	}
+
+
+}
+
+@media only screen and (max-width : 500px) {
+	
+
+	#outer {
+		width: 340px;
+		height: 189px;
+		margin-top: 300px;
+
+	}
+}
+
+@media only screen and (max-width : 400px) {
+	
+#joe-single, #ilana-single {
+	width: 90px;
+	height: auto;
+}
+	#joe-single {
+	margin-right: 40px;
+}
+
+#ilana-single {
+	margin-left: 40px;
+}
+
+#heart2 {
+	top: -75px;
+	}
+
+}
+
+@media only screen and (max-width : 320px) {
+	
+	#outer {
+		width: 300px;
+		height: 167px;
+
+	}
+
+	#names {
+		font-size: 40px;
+		padding-top: 16px;
+	}
+
+}
+
+
+
+
+
+/*iPad Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.0){
+	.background-img {
+		min-height: 900px !important;
+
+	}
+
+	#bg1 {
+		background-image: url(photos/background1-small.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-attachment: scroll;
+	}
+
+	#bg4 {
+		background: url(photos/background4-small.jpg) 0px 60px/cover no-repeat scroll;
+		min-height: 900px;
+	}
+
+
+}
+/*iPad Pro Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait)  and (-webkit-min-device-pixel-ratio: 1.5) {
+	.background-img {
+		min-height: 1000px !important;
+	}
+
+	#bg1 {
+		background-image: url(photos/background1-small.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-attachment: scroll;
+	}
+
+	#bg4 {
+		background: url(photos/background4-small.jpg) 0px 60px/cover no-repeat scroll;
+		min-height: 1200px !important;
+	}
+
+	#outer {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: 10%;
+	}
+
+
+}
+
+
+
+
+
